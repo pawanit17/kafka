@@ -30,7 +30,15 @@ Overview of Kafka and usage in Distributed Systems
 - One node could be leader of one partition of a topic and the other node could be leader of the next partition. This produces high availability.
 - The information on who the leader is, is stored in Apache Zookeeper.
 - ![image](https://user-images.githubusercontent.com/42272776/173422370-f408b26e-19c9-47b0-8e93-af397d685e2b.png)
+- Producers can only WRITE to the Leaders, not to the followers. This is because this is a leader based system, unlike Cassandra which is a masterless distributed system.
+- ![image](https://user-images.githubusercontent.com/42272776/173423257-cf2aed0a-ab84-45f1-8ef3-7f959f4d2153.png)
+- ![image](https://user-images.githubusercontent.com/42272776/173423329-e016ef6f-59e5-41f6-b88f-6867cbca73ca.png)
 
+# Example
+- Spin up Zookeeper. We need this even if we have a single kafka cluster.
+- Spin up Kafka
+- Write to Kafka
+- Read from Kafka
 
 # KSQL
 # Streaming
