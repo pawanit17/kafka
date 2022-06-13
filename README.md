@@ -39,6 +39,7 @@ Overview of Kafka and usage in Distributed Systems
 - Spin up Kafka
 - Write to Kafka
 - Read from Kafka
+## TODO SpringBoot Kafka Connection
 
 # Pros and Cons
 ## Pros
@@ -55,7 +56,6 @@ Overview of Kafka and usage in Distributed Systems
 - Zookeeper. But this is removed as a dependency for Kafka. This is because Zookeeper adds a single point of failure.
 - Producer needs to know the partition. Vitesse?.
 - Complex installation, configuration and maintenance.
-- 
 
 
 # KSQL
