@@ -40,5 +40,23 @@ Overview of Kafka and usage in Distributed Systems
 - Write to Kafka
 - Read from Kafka
 
+# Pros and Cons
+## Pros
+- Append only Commit log - all the information gets saved here. Similar to Cassandra.
+- Performance is very good as we work with indexes.
+- Distributed.
+- Long Polling ( Not all consumers can consume data as fast as the producer produces them ).
+- Event Driven, Pub Sub and Queue.
+  - Used for Microservices communication instead of direct communication. 
+- Scaling.
+- Parallel Process.
+
+## Cons
+- Zookeeper. But this is removed as a dependency for Kafka. This is because Zookeeper adds a single point of failure.
+- Producer needs to know the partition. Vitesse?.
+- Complex installation, configuration and maintenance.
+- 
+
+
 # KSQL
 # Streaming
