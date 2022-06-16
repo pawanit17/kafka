@@ -57,6 +57,7 @@ Overview of Kafka and usage in Distributed Systems
 - Producer needs to know the partition. Vitesse?.
 - Complex installation, configuration and maintenance.
 
+# Docker
 
 # KSQL
 # Streaming
